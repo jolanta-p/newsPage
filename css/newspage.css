@@ -1,0 +1,143 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#main nav {
+    background-color: #fff;
+}
+
+nav#main li {
+    display: inline;
+    margin-right: 20px;
+    float: right;
+}
+
+hr {
+    clear: both;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.logo {
+    width: 350px;
+}
+
+h1,
+h2 {
+    text-transform: none;
+}
+
+p {
+    font-weight: 400;
+    text-transform: none;
+}
+
+#science {
+    background-color: #648fff;
+    color: #fff;
+    height: 35px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#science h3 {
+    margin-left: 25px;
+    padding: 5px;
+}
+
+#politics {
+    background-color: #785ef0;
+    color: #fff;
+    height: 35px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#politics h3 {
+    margin-left: 25px;
+    padding: 5px;
+}
+
+#music {
+    background-color: #dc267f;
+    color: #fff;
+    height: 35px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#music h3 {
+    margin-left: 25px;
+    padding: 5px;
+}
+
+#art {
+    background-color: #fe6100;
+    color: #fff;
+    height: 35px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#art h3 {
+    margin-left: 25px;
+    padding: 5px;
+}
+
+.weatherwidget-io {
+    width: 320px;
+    margin-bottom: -42px;
+}
+
+#main3 {
+    margin-top: 15px;
+    border-top: 5px solid #ffb000;
+}
+
+#main1,
+#main2 {
+    border-top: 5px solid #ffb000;
+}
+
+#art3 {
+    margin-top: 25px;
+    border-bottom: 5px solid #fe6100;
+}
+
+#art1,
+#art2 {
+    border-bottom: 5px solid #fe6100;
+}
+
+#foot1 {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#footerLogo {
+    width: 250px;
+}
+
+.tagline {
+    margin-top: -10px;
+}
+
+.social {
+    width: 1.75rem;
+    margin-left: 0.5rem;
+}
+
+#mainNews .col-1-3 {
+    background-color: rgb(231, 231, 231);
+}

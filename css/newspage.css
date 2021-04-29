@@ -8,7 +8,7 @@ body {
 
 nav#main li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 25px;
     float: right;
 }
 
@@ -27,6 +27,20 @@ a {
     font-weight: 700;
 }
 
+#main ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+#main ul li:hover:after {
+    width: 100%;
+}
+
 .logo {
     width: 350px;
 }
@@ -39,6 +53,18 @@ h2 {
 p {
     font-weight: 400;
     text-transform: none;
+}
+
+#mainNews {
+    background-color: #ffb000;
+    height: 35px;
+}
+
+#mainNews h3 {
+    margin-left: 25px;
+    padding: 5px;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 #science {
@@ -95,27 +121,11 @@ p {
 
 .weatherwidget-io {
     width: 320px;
-    margin-bottom: -42px;
-}
-
-#main3 {
-    margin-top: 15px;
-    border-top: 5px solid #ffb000;
-}
-
-#main1,
-#main2 {
-    border-top: 5px solid #ffb000;
+    float: right;
 }
 
 #art3 {
     margin-top: 25px;
-    border-bottom: 5px solid #fe6100;
-}
-
-#art1,
-#art2 {
-    border-bottom: 5px solid #fe6100;
 }
 
 #foot1 {
@@ -139,5 +149,31 @@ p {
 }
 
 #mainNews .col-1-3 {
-    background-color: rgb(231, 231, 231);
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.mainHr {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    #mainNews .col-1-3 {
+        background-color: #fff;
+    }
+    ul {
+        padding: 0;
+    }
+    nav#main li {
+        display: inline;
+        margin-right: 25px;
+        float: left;
+    }
+    nav#main li#searchIcon {
+        display: none;
+    }
+    .weatherwidget-io {
+        width: 100%;
+        float: left;
+    }
 }

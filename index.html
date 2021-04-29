@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon">
     <title>NEWStoday</title>
@@ -32,12 +33,14 @@
 
         <div class="col-1-1">
 
-            <img class="logo" src="./img/nt_logo.png" alt="Logo">
+            <a href="index.html"><img class="logo" src="./img/nt_logo.png" alt="Logo"></a>
+
             <a class="weatherwidget-io" href="https://forecast7.com/en/52d84n6d93/carlow/" data-label_1="CARLOW" data-mode="Current" data-theme="pure">CARLOW</a>
 
             <nav id="main">
                 <ul>
-                    <li>
+
+                    <li id="searchIcon">
                         <a href="#"><img src="./img/search_icon.png" alt="Search Icon"></a>
                     </li>
                     <li><a href="#art">art</a></li>
@@ -47,35 +50,35 @@
                     <li><a href="index.html">home</a></li>
                 </ul>
             </nav>
-            <hr>
-
+            <hr class="mainHr">
         </div>
     </div>
 
-
     <div class="grid grid-pad">
+        <iframe src="https://free.timeanddate.com/clock/i7s8eywq/n78/fn9/ahl/ftb/pa8/tt0/tw1/tm1/th1/tb2" frameborder="0" width="203" height="33"></iframe>
+
         <div id="mainNews">
             <a name="mainNews"></a>
+            <h3>Main News</h3>
+
 
             <div class="col-2-3">
-                <a href="https://www.rte.ie/news/2021/0301/1200149-covid19-eu/">
+                <a href="https://www.rte.ie/news/2021/0301/1200149-covid19-eu/" target="_blank">
                     <h1>EU to propose vaccine passports in time for summer</h1>
 
                     <img id="main1" class="full-width-image" src="./img/main_news1.jpg" alt="">
                 </a>
-                <figcaption>Countries such as Spain and Greece are pushing to unlock tourism this summer</figcaption>
-
                 <p class="article-preview">The European Commission will present a proposal this month on creating an EU-wide digital Covid-19 vaccination passport that may allow Europeans to travel more freely over the peak summer holiday period. <br> <br>Commission President Ursula
                     von der Leyen announced the coming legislative proposal in a speech to German conservative politicians today, providing a few more details in subsequent tweets. <br><br>The "digital green pass" would provide proof that a person has
                     been vaccinated, results of tests for those not yet vaccinated and information on recovery for people who have contracted Covid-19.<br><br>"The aim is to gradually enable them to move safely in the European Union or abroad - for work
-                    or tourism," she said.</p>
+                    or tourism," she said.<br> EU leaders agreed last week to work on vaccine certificates, for which southern countries such as Spain and Greece are pushing to unlock tourism this summer.</p>
 
                 <small><b>Author: Jolanta Petraityte</b></small><br>
                 <date>26 April 2021</date>
 
             </div>
-            <div class="col-1-3">
-                <a href="https://www.independent.ie/world-news/europe/eu-court-of-justice-issues-first-ever-judgement-in-irish-on-st-patricks-day-40207932.html">
+            <div class="col-1-3 mobile-col-1-1">
+                <a href="https://www.independent.ie/world-news/europe/eu-court-of-justice-issues-first-ever-judgement-in-irish-on-st-patricks-day-40207932.html" target="_blank">
                     <img id="main2" class="full-width-image" src="./img/main_news2.jpg" alt="">
                     <h2>EU Court of Justice issues first-ever judgement in Irish on St Patrick’s Day</h2>
                     <p class="article-preview">The EU’s Court of Justice has coincidentally issued its first ever judgement in Irish on St Patrick’s Day.</p>
@@ -84,8 +87,8 @@
                 <date>26 April 2021</date>
 
             </div>
-            <div class="col-1-3">
-                <a href="https://www.bbc.com/news/world-europe-56470597">
+            <div class="col-1-3 mobile-col-1-1">
+                <a href="https://www.bbc.com/news/world-europe-56470597" target="_blank">
                     <img id="main3" class="full-width-image" src="./img/main_news3.jpg" alt="">
                     <h2>Iceland volcano: Lava-spewing Fagradalsfjall 'subsiding'</h2>
                     <p class="article-preview">A volcano which erupted on Friday night near Iceland's capital Reykjavik seems to be subsiding, scientists say.</p>
@@ -105,7 +108,7 @@
         </div>
 
         <div class="col-4-12">
-            <a href="https://www.rte.ie/news/newslens/2021/0322/1205377-asteroid/">
+            <a href="https://www.rte.ie/news/newslens/2021/0322/1205377-asteroid/" target="_blank">
                 <img class="full-width-image" src="./img/science_news1.jpg" alt="">
                 <h2>Huge asteroid passes 'close' by Earth at 124,000km/hr</h2>
                 <p class="article-preview">The largest asteroid to pass by Earth this year has made its closest approach, posing no threat of a cataclysmic collision but giving astronomers a rare chance to study a rock formed during the beginning of our solar system.</p>
@@ -115,7 +118,7 @@
 
         </div>
         <div class="col-4-12">
-            <a href="https://neurohacker.com/evidence-based-nutrition-an-interview-with-dr-michael-greger">
+            <a href="https://neurohacker.com/evidence-based-nutrition-an-interview-with-dr-michael-greger" target="_blank">
                 <img class="full-width-image" src="./img/science_news2.jpg" alt="">
                 <h2>Evidence-Based Nutrition: An Interview with Dr. Michael Greger</h2>
                 <p class="article-preview">What follows is a transcript for the podcast Take Control of Your Health: An Exploration of Evidence Based Nutrition.</p>
@@ -125,7 +128,7 @@
 
         </div>
         <div class="col-4-12">
-            <a href="https://www.independent.ie/life/health-wellbeing/losing-sleep-insomnia-epidemic-being-driven-by-pandemic-40218242.html">
+            <a href="https://www.independent.ie/life/health-wellbeing/losing-sleep-insomnia-epidemic-being-driven-by-pandemic-40218242.html" target="_blank">
                 <img class="full-width-image" src="./img/science_news3.jpg" alt="">
                 <h2>Losing sleep – insomnia epidemic being driven by pandemic</h2>
                 <p class="article-preview">It was World Sleep Day yesterday but for Ireland’s ‘3am club’, who suffer from insomnia and other sleep problems, there wasn’t much shut eye to be had. </p>
@@ -146,7 +149,7 @@
         </div>
 
         <div class="col-4-12">
-            <a href="https://www.theguardian.com/world/commentisfree/2021/jan/19/europe-relationship-africa-colonial-racism-eu">
+            <a href="https://www.theguardian.com/world/commentisfree/2021/jan/19/europe-relationship-africa-colonial-racism-eu" target="_blank">
                 <img class="full-width-image" src="./img/politics_news1.jpg" alt="">
                 <h2>Europe can only fix its relationship with Africa if it exorcises its colonial ghosts</h2>
                 <p class="article-preview">Paternalism and racism must be tackled if the EU is to rebuild trust with a young, economically dynamic continent</p>
@@ -156,7 +159,7 @@
 
         </div>
         <div class="col-4-12">
-            <a href="https://www.rte.ie/news/coronavirus/2021/0429/1212714-cabinet-restrictions">
+            <a href="https://www.rte.ie/news/coronavirus/2021/0429/1212714-cabinet-restrictions" target="_blank">
                 <img class="full-width-image" src="./img/politics_news2.jpg" alt="">
                 <h2>Hope for a more positive summer, says Coveney</h2>
                 <p class="article-preview">Minister for Foreign Affairs Simon Coveney has said a "staged, incremental" re-opening of society which is consistent with public health will be announced today offering hope for a more positive summer.</p>
@@ -166,7 +169,7 @@
 
         </div>
         <div class="col-4-12">
-            <a href="https://www.rte.ie/news/2021/0428/1212669-vaccines-pharmaceutical-companies">
+            <a href="https://www.rte.ie/news/2021/0428/1212669-vaccines-pharmaceutical-companies" target="_blank">
                 <img class="full-width-image" src="./img/politics_news3.jpg" alt="">
                 <h2>Dáil discusses intellectual property rights on vaccines</h2>
                 <p class="article-preview">The Taoiseach has said Ireland will "examine in some detail" a proposal to waive the intellectual property rights of pharmaceutical companies to allow developing countries to produce more Covid-19 vaccines.</p>
@@ -185,7 +188,7 @@
         </div>
 
         <div class="col-4-12">
-            <a href="https://pitchfork.com/reviews/albums/mogwai-as-the-love-continues/">
+            <a href="https://pitchfork.com/reviews/albums/mogwai-as-the-love-continues/" target="_blank">
                 <img class="full-width-image" src="./img/music_news1.jpg" alt="">
                 <h2>Mogwai<br>As the Love Continues</h2>
                 <p class="article-preview">The Scottish band is on familiar ground, patiently building mountainous songs suffused in nameless sadness, but they sound energized by the darkness—and refreshingly resistant to self-seriousness.</p>
@@ -195,7 +198,7 @@
 
         </div>
         <div class="col-4-12">
-            <a href="https://www.nme.com/reviews/pillow-queens-in-waiting-review-radar-2760777">
+            <a href="https://www.nme.com/reviews/pillow-queens-in-waiting-review-radar-2760777" target="_blank">
                 <img class="full-width-image" src="./img/music_news2.jpg" alt="">
                 <h2>Pillow Queens – ‘In Waiting’ review: debut that takes you right to the heart of modern Ireland</h2>
                 <p class="article-preview">Compassionate and life-affirming; the Dublin band dream of a kinder world on their debut.</p>
@@ -205,7 +208,7 @@
 
         </div>
         <div class="col-4-12">
-            <a href="https://pitchfork.com/reviews/albums/sophie-oil-of-every-pearls-un-insides/">
+            <a href="https://pitchfork.com/reviews/albums/sophie-oil-of-every-pearls-un-insides/" target="_blank">
                 <img class="full-width-image" src="./img/music_news3.jpg" alt="">
                 <h2>SOPHIE <br>OIL OF EVERY PEARL’s UN-INSIDES
                 </h2>
@@ -226,7 +229,7 @@
         </div>
 
         <div class="col-7-12">
-            <a href="https://www.frieze.com/article/society-has-become-biggest-panopticon-interview-shu-lea-cheang">
+            <a href="https://www.frieze.com/article/society-has-become-biggest-panopticon-interview-shu-lea-cheang" target="_blank">
                 <img id="art1" class="full-width-image" src="./img/art_news1.jpg" alt="">
                 <h2>‘Society Has Become the Biggest Panopticon’: An Interview with Shu Lea Cheang </h2>
                 <p class="article-preview">The queer cyberfeminist pioneer’s Taiwan Pavilion in Venice explores surveillance, pleasure and control.</p>
@@ -236,7 +239,7 @@
 
         </div>
         <div class="col-5-12">
-            <a href="https://www.art-agenda.com/features/380681/transmediale-for-refusal">
+            <a href="https://www.art-agenda.com/features/380681/transmediale-for-refusal" target="_blank">
                 <img id="art2" class="full-width-image" src="./img/art_news2.jpg" alt="">
                 <h2>Transmediale, “for refusal” </h2>
                 <p class="article-preview">Sitting at my desk in London in front of my MacBook, I join a Zoom meeting where I look at four chunky, gray mid-2000s computers arranged on a table in an exhibition space in Berlin. </p>
@@ -246,7 +249,7 @@
 
         </div>
         <div class="col-5-12">
-            <a href="https://www.art-agenda.com/announcements/350681/friedrich-kunathnew-ballads">
+            <a href="https://www.art-agenda.com/announcements/350681/friedrich-kunathnew-ballads" target="_blank">
                 <img id="art3" class="full-width-image" src="./img/art_news3.jpg" alt="">
                 <h2>Friedrich Kunath <br>New Ballads</h2>
                 <p class="article-preview">Tim Van Laere Gallery is pleased to present its second solo exhibition of Friedrich Kunath, titled New Ballads.</p>
@@ -280,6 +283,7 @@
 
 
     </div>
+
 </body>
 
 </html>
